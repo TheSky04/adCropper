@@ -1,0 +1,178 @@
+@media only screen and (max-width: 1700px) {
+  .img-kapı {
+    bottom: 14%;
+  }
+}
+
+@media only screen and (max-width: 1430px) {
+  .img-kapı {
+    bottom: 15%;
+  }
+}
+
+@media only screen and (max-width: 1225px) {
+  .img-kapı {
+    bottom: 16%;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .img-kapı {
+    bottom: 16.5%;
+  }
+}
+
+@media only screen and (max-width: 815px) {
+  .img-kapı {
+    bottom: 17%;
+  }
+}
+
+@media only screen and (max-width: 685px) {
+  .img-kapı {
+    bottom: 17.5%;
+  }
+
+  .video {
+    width: 50rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .img-kapı {
+    bottom: 18%;
+  }
+
+  .video {
+    width: 45rem;
+  }
+
+  .login--form {
+    width: 35rem;
+  }
+
+  .login,
+  .register,
+  .forgot--password {
+    justify-content: center;
+    margin-left: 1rem;
+  }
+
+  .login--form,
+  .register--form {
+    width: 90%;
+  }
+
+  .forgot--form {
+    width: 80%;
+  }
+
+  html {
+    font-size: 56.25%;
+  }
+
+  .already--button {
+    font-size: 1.2rem !important;
+  }
+}
+
+@media only screen and (max-width: 475px) {
+  .animations {
+    background-image: url(../assets/background-mobile.jpg);
+  }
+
+  .img-plane {
+    width: 150vw;
+    left: 70%;
+    animation: plane-right-to-left-mobile 1s linear forwards;
+  }
+
+  .img-man1 {
+    width: 20vw;
+  }
+
+  .img-man2 {
+    width: 20vw;
+  }
+
+  .img-kapı {
+    top: 71%;
+    left: 36%;
+    width: 19.5vw;
+    animation: door-left-to-right-mobile 1s linear, hide-the-door 1s linear 1s;
+    animation-fill-mode: forwards;
+  }
+
+  .video {
+    width: 30rem;
+  }
+
+  .login--form {
+    width: 30rem;
+  }
+
+  .login--text {
+    font-size: 2rem;
+  }
+
+  .login--form,
+  .register--form,
+  .forgot--form {
+    width: 90%;
+  }
+
+  .errorMessage {
+    width: 50%;
+    font-size: 1.3rem;
+  }
+}
+
+@media only screen and (max-width: 355px) {
+  /* .img-kapı {
+    bottom: 18.8%;
+  } */
+
+  .video {
+    width: 35rem;
+  }
+
+  .login--form {
+    width: 25rem;
+  }
+
+  .login--text {
+    font-size: 1.6rem;
+  }
+
+  .img-plane {
+    width: 150vw;
+    left: 70%;
+  }
+
+  .img-kapı {
+    top: 73% !important;
+    left: 36%;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  /* .img-kapı {
+    bottom: 19%;
+  } */
+
+  .video {
+    width: 30rem;
+  }
+
+  .login--text {
+    font-size: 1.3rem;
+  }
+
+  .login--container {
+    margin-left: 1rem;
+  }
+
+  .already--button {
+    font-size: 0.8rem !important;
+  }
+}

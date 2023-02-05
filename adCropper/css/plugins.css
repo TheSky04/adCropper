@@ -1,0 +1,269 @@
+/*********** Switch Button **************/
+
+@import url("https://fonts.googleapis.com/css2?family=Aref+Ruqaa+Ink:wght@400;700&family=Noto+Sans+TC:wght@300;400;500;700;900&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+.plugins {
+  background-color: #ae3ec9;
+  width: 100%;
+  min-height: 100vh;
+  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.toggleBtn {
+  margin-left: 10rem;
+  margin-bottom: 3rem;
+}
+
+.plugins--text {
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+}
+
+.toggleBtn span {
+  display: block;
+  width: 160px;
+  height: 72px;
+  background: #d6d6d6;
+  border-radius: 999px;
+  position: relative;
+
+  box-shadow: 0px 4px 8px rgba(0 0 0 / 0.4) inset,
+    0px -4px 2px rgba(255 255 255 / 0.2) inset;
+}
+.toggleBtn span::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: -16px;
+  width: 72px;
+  height: 72px;
+  background: white;
+  border-radius: 50%;
+
+  box-shadow: 2px 1px 2px rgba(0 0 0 / 0.2);
+}
+.toggleBtn span,
+.toggleBtn span::after {
+  transition: 0.3s ease-in-out;
+}
+.toggleBtn input {
+  position: absolute;
+  width: 160px;
+  height: 72px;
+  z-index: 1;
+  opacity: 0;
+}
+.toggleBtn input:checked ~ span {
+  background: var(--color-adcropper-purple);
+}
+.toggleBtn input:checked ~ span::after {
+  left: 94px;
+}
+
+.toggleBtn span {
+  box-shadow: 0px 2px 4px rgba(0 0 0 / 0.4) inset,
+    0px -2px 1px rgba(255 255 255 / 0.2) inset;
+}
+.toggleBtn span::after {
+  box-shadow: 2px 1px 2px rgba(0 0 0 / 0.2);
+}
+
+/************ Range ****************/
+.range {
+  margin-left: 10rem;
+  margin-bottom: 3rem;
+}
+
+#vol {
+  accent-color: var(--color-adcropper-purple);
+  width: 15rem;
+}
+
+/********** Date Picker *************/
+.datePicker {
+  margin-left: 10rem;
+  margin-bottom: 3rem;
+  width: 10rem;
+}
+
+/********** Popup Button *************/
+.popup {
+  margin-left: 10rem;
+}
+
+.mb-1 {
+  margin-bottom: 1rem;
+}
+
+.popup--button,
+.disabled--popup {
+  width: 10rem;
+  border: none;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1.5rem;
+  border-radius: 5px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.popup--button:hover {
+  background-color: #eee;
+}
+
+.popup--button--text {
+  color: #9c9c9c;
+}
+
+.popup--list {
+  background-color: #fff;
+  width: 10rem;
+  margin-top: 0.5rem;
+  list-style-type: none;
+  border-radius: 3px;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+
+.popup--item {
+  border-bottom: 1px solid #eee;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.popup--item:hover {
+  background-color: #ccc;
+}
+
+.fa-caret-down {
+  color: var(--color-adcropper-purple);
+}
+
+.disabled {
+  cursor: not-allowed;
+  background-color: #767676;
+}
+
+.popup--button--disabled {
+  color: #6a6a6a;
+}
+
+/********** Popup Button *************/
+.chart {
+  margin-left: 10rem;
+  margin-bottom: 3rem;
+}
+
+.chart--content {
+  width: 20rem;
+  background-color: #fff;
+  text-align: center;
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.chart--title {
+  margin-bottom: 0.3rem;
+  font-size: 1.2rem;
+  color: #7b7b7b;
+}
+
+.chart--text {
+  color: #a9a9a9;
+  font-size: 1rem;
+}
+
+.chart--number {
+  color: #666666;
+  font-size: 3rem;
+}
+
+.chart--button {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 3rem;
+  border-radius: 5px;
+  background-color: var(--color-adcropper-purple);
+}
+
+/*****************************************************/
+@property --p {
+  syntax: "<number>";
+  inherits: true;
+  initial-value: 0;
+}
+
+.pie {
+  --p: 20;
+  --b: 22px;
+  --c: darkred;
+  --w: 150px;
+
+  width: var(--w);
+  aspect-ratio: 1;
+  position: relative;
+  display: inline-grid;
+  margin: 1rem 0;
+  place-content: center;
+  font-size: 25px;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+.pie:before,
+.pie:after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+}
+.pie:before {
+  inset: 0;
+  background: radial-gradient(farthest-side, var(--c) 98%, #0000) top/var(--b)
+      var(--b) no-repeat,
+    conic-gradient(var(--c) calc(var(--p) * 1%), #0000 0);
+  -webkit-mask: radial-gradient(
+    farthest-side,
+    #0000 calc(99% - var(--b)),
+    #000 calc(100% - var(--b))
+  );
+  mask: radial-gradient(
+    farthest-side,
+    #0000 calc(99% - var(--b)),
+    #000 calc(100% - var(--b))
+  );
+}
+.pie:after {
+  inset: calc(50% - var(--b) / 2);
+  background: var(--c);
+  transform: rotate(calc(var(--p) * 3.6deg))
+    translateY(calc(50% - var(--w) / 2));
+}
+.animate {
+  animation: p 1s 0.5s both;
+}
+.no-round:before {
+  background-size: 0 0, auto;
+}
+.no-round:after {
+  content: none;
+}
+@keyframes p {
+  from {
+    --p: 0;
+  }
+}
+
+/*********** Part Range ****************/
+.partRange {
+  margin-left: 10rem;
+}
+
+.part-range {
+  accent-color: var(--color-adcropper-purple);
+}

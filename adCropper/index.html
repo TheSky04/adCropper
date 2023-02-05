@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/mediaqueries.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+    <link rel="stylesheet" href="css/plugins.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
+
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <section class="animations hidden">
+      <img class="img-plane" src="./assets/ucak.png" alt="a plane" />
+      <img class="img-man1" src="./assets/manu1.png" alt="a first man" />
+      <img class="img-kapı" src="./assets/kapı.png" alt="a door" />
+      <img class="img-man2" src="./assets/manu2.png" alt="second man" />
+      <img class="confetti" src="./assets/confetti.png" alt="confetti" />
+      <div class="coins">
+        <img
+          class="coin-1 showAnimation"
+          src="./assets/coin-1.png"
+          alt="coin-1"
+        />
+        <img
+          class="coin-2 showAnimation"
+          src="./assets/coin2.png"
+          alt="coin-3"
+        />
+        <img
+          class="coin-3 showAnimation"
+          src="./assets/coin3.png"
+          alt="coin-4"
+        />
+        <img
+          class="coin-4 showAnimation"
+          src="./assets/coin4.png"
+          alt="coin-5"
+        />
+        <img
+          class="coin-1-again showAnimation"
+          src="./assets/coin1.png"
+          alt="coin-2"
+        />
+        <img
+          class="coin-2-again showAnimation"
+          src="./assets/coin2.png"
+          alt="coin-3"
+        />
+        <img
+          class="coin-3-again showAnimation"
+          src="./assets/coin3.png"
+          alt="coin-4"
+        />
+        <img
+          class="coin-4-again showAnimation"
+          src="./assets/coin4.png"
+          alt="coin-5"
+        />
+      </div>
+    </section>
+    <section class="section--second hidden">
+      <div class="content">
+        <p class="content--text">
+          Lorem ipsum is simply dummy text of the printing and typesetting
+          industry.
+        </p>
+        <div class="cta--container">
+          <a href="#" class="cta">CTA</a>
+        </div>
+        <iframe
+          class="video"
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/VvcF7-_lyhY"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </section>
+    <section class="plugins hidden">
+      <div class="toggleBtn">
+        <p class="plugins--text">Switch Button</p>
+        <input type="checkbox" />
+        <span></span>
+      </div>
+      <div class="range">
+        <p class="plugins--text">Range</p>
+        <input type="range" id="vol" name="vol" min="0" max="100" />
+      </div>
+      <div class="datePicker">
+        <p class="plugins--text">Date Picker</p>
+        <input type="date" class="date--picker" />
+      </div>
+      <div class="popup">
+        <p class="plugins--text">Disabled Button</p>
+        <button class="disabled--popup mb-1 disabled">
+          <span class="popup--button--disabled">Lorem</span>
+          <span><i class="fa-solid fa-caret-down"></i></span>
+        </button>
+        <p class="plugins--text">Popup Button</p>
+        <button class="popup--button">
+          <span class="popup--button--text">Lorem</span>
+          <span><i class="fa-solid fa-caret-down"></i></span>
+        </button>
+        <ul class="popup--list hidden-opacity">
+          <li class="popup--item">Popup 1</li>
+          <li class="popup--item">Popup 2</li>
+          <li class="popup--item">Popup 3</li>
+        </ul>
+      </div>
+      <div class="chart">
+        <p class="plugins--text">Chart</p>
+        <div class="chart--content">
+          <h4 class="chart--title">Headline</h4>
+          <p class="chart--text">Subheadline lorem ipsum</p>
+          <div
+            class="pie no-round"
+            style="--p: 75; --c: var(--color-adcropper-purple); --b: 15px"
+          >
+            <p class="chart--number">%75</p>
+          </div>
+          <button class="chart--button">CTA</button>
+        </div>
+      </div>
+      <div class="partRange">
+        <p class="plugins--text">Part Range</p>
+        <input
+          class="part-range"
+          type="range"
+          value="1"
+          min="0"
+          max="100"
+          step="20"
+        />
+      </div>
+    </section>
+    <section class="login hidden">
+      <div class="login--container">
+        <div class="login--content">
+          <img
+            class="login--image"
+            src="./assets/adc-logo.svg"
+            alt="Adcropper Logo"
+          />
+          <p class="login--text">Welcome to Addcropper!</p>
+        </div>
+        <form class="login--form">
+          <div class="login--input--group">
+            <label class="login--label" for="email">Email</label>
+            <input type="email" class="login--input login--email" id="email" />
+          </div>
+          <div class="text-align-right">
+            <a href="#" class="login--forgot--password forgot"
+              >Forgot Password?</a
+            >
+          </div>
+          <div class="login--input--group">
+            <label class="login--label" for="password">Password</label>
+            <input
+              type="password"
+              class="login--input login--password"
+              id="password"
+            />
+          </div>
+          <div class="login--checkbox--group">
+            <input type="checkbox" class="login--checkbox" id="checkbox" />
+            <label class="login--label" for="checkbox">Remember me!</label>
+          </div>
+          <button type="submit" class="login--btn">Sign in</button>
+        </form>
+      </div>
+    </section>
+    <section class="forgot--password hidden">
+      <div class="forgot--container">
+        <div class="forgot--content">
+          <img
+            class="login--image"
+            src="./assets/adc-logo.svg"
+            alt="Adcropper Logo"
+          />
+          <p class="forgot--text">New Password</p>
+        </div>
+        <form class="forgot--form">
+          <div class="forgot--input--group">
+            <label class="forgot--label" for="email-forgot">Email</label>
+            <input
+              type="email"
+              class="forgot--input forgot--email"
+              id="email-forgot"
+            />
+          </div>
+          <div class="forgot--input--group">
+            <label class="forgot--label" for="password-forgot">Password</label>
+            <input
+              type="password"
+              class="forgot--input forgot--password--input"
+              id="password-forgot"
+            />
+          </div>
+
+          <div class="forgot--input--group mb-2">
+            <label class="forgot--label" for="password-forgot-2"
+              >Repeat Password</label
+            >
+            <input
+              type="password"
+              class="forgot--input forgot--repassword--input"
+              id="password-forgot-2"
+            />
+          </div>
+          <div class="text-align-right mb-2">
+            <a href="#" class="login--forgot--password left-arrow">&larr;</a>
+          </div>
+          <button type="submit" class="forgot--btn">Sign in</button>
+        </form>
+      </div>
+    </section>
+    <section class="register">
+      <div class="login--container">
+        <div class="login--content">
+          <img
+            class="login--image"
+            src="./assets/adc-logo.svg"
+            alt="Adcropper Logo"
+          />
+          <p class="login--text">Register</p>
+        </div>
+        <form class="register--form">
+          <div class="register--input--group">
+            <label class="register--label" for="email-register">Email</label>
+            <input
+              type="email"
+              class="register--input register--email"
+              id="email-register"
+            />
+          </div>
+          <div class="register--input--group">
+            <label class="register--label" for="password-register"
+              >Password</label
+            >
+            <input
+              type="password"
+              class="register--input register--password"
+              id="password-register"
+            />
+          </div>
+          <div class="text-align-right mb-2">
+            <a href="#" class="already--button register--already"
+              >Already have an account?</a
+            >
+          </div>
+          <button type="submit" class="register--btn">Register</button>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>
